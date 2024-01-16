@@ -8,7 +8,7 @@ public class wordcounter extends JFrame {
     }
 
     public static void main(String [] args){
-        JFrame wordcount = new JFrame("Word Counte");
+        JFrame wordcount = new JFrame("Word Counter");
         wordcount.setSize(400, 300);
         wordcount.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         wordcount.setLayout(new BorderLayout());
