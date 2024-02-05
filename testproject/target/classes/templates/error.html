@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Error</title>
+</head>
+<body>
+    <h1>Error</h1>
+    <p>
+        <span th:if="${error instanceof T(org.springframework.validation.BindingResult)}">
+            An error occurred: <span th:text="${error.allErrors[0].defaultMessage}"></span>
+        </span>
+        <span th:unless="${error instanceof T(org.springframework.validation.BindingResult)}">
+            An error occurred: <span th:text="${error}"></span>
+        </span>
+    </p>
+</body>
+</html>
